@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello DevOps from Python! 🎉"
+    return "Hello DevOps from feature branch! 🎉"
 
 if __name__ == "__main__":
     # 0.0.0.0: minden hálózati interfészen figyel
