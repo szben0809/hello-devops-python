@@ -1,0 +1,10 @@
+{
+    "name": "Hello DevOps Python DevContainer",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+    },
+    "postCreateCommand": "pip install --no-cache-dir -r requirements.txt",
+    "remoteUser": "root"
+}
