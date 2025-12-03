@@ -70,27 +70,8 @@ http://localhost:8080
 
 ---
 
-## 5. CI pipeline és container registry
 
-A GitHub Actions pipeline automatikusan:
-
-- ellenőrzi a repót,
-- buildeli az alkalmazást,
-- Docker image-et készít,
-- a képet pusholja a GitHub Container Registry-be (GHCR).
-
-### 5.1. Image lehúzása a registryből
-
-```bash
-docker pull ghcr.io/<GitHub-felhasználóneved>/hello-devops-python:latest
-```
-
-### 5.2. Image futtatása
-
-```bash
-docker run -p 8080:8080 ghcr.io/<GitHub-felhasználóneved>/hello-devops-python:latest
-```
-## Dev Container használata (Választható feladatrész – 3.1)
+## Dev Container használata (Választható feladatrész – )
 
 A projekt tartalmaz egy `.devcontainer` mappát, amely VS Code Dev Containers környezetet biztosít
 a fejlesztéshez. A Dev Container lehetővé teszi, hogy a projekt egy elkülönített, előre
