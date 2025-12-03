@@ -90,3 +90,29 @@ docker pull ghcr.io/<GitHub-felhasználóneved>/hello-devops-python:latest
 ```bash
 docker run -p 8080:8080 ghcr.io/<GitHub-felhasználóneved>/hello-devops-python:latest
 ```
+## Dev Container használata (Választható feladatrész – 3.1)
+
+A projekt tartalmaz egy `.devcontainer` mappát, amely VS Code Dev Containers környezetet biztosít
+a fejlesztéshez. A Dev Container lehetővé teszi, hogy a projekt egy elkülönített, előre
+konfigurált Linux-alapú fejlesztői konténerben fusson – ugyanazokkal a verziókkal és függőségekkel,
+függetlenül attól, hogy a fejlesztő gépén mi van telepítve.
+
+### 🔧 Dev Container indítása
+
+1. Nyisd meg a projektet VS Code-ban.
+2. Telepítsd a következő kiegészítőt (ha még nincs):
+   - **Dev Containers** (Microsoft)
+3. A bal alsó sarokban kattints a zöld ikonra.
+4. Válaszd ki:
+   **"Reopen in Container"**
+5. A VS Code automatikusan:
+   - felépíti a konténert a `.devcontainer/Dockerfile` alapján,
+   - létrehozza a környezetet,
+   - telepíti a `requirements.txt` függőségeit.
+
+### ▶️ Futás DevContaineren belül
+
+A konténerben megnyíló beépített terminálban futtasd:
+
+```bash
+python Proba.py
